@@ -1,0 +1,40 @@
+
+.flex__container{
+    display: flex;
+}
+
+body{
+    align-items: center;
+    justify-content: center;    
+    height: 100vh;
+}
+.testando{
+    width: 400px;
+    column-gap: 2rem;
+    justify-content: space-between;
+    transition: .2s;
+}
+.testando:hover :not(:hover){
+    opacity: 0.3;
+}
+.titulo{
+    display: none;
+    font-size: 2rem;
+    color: red;
+    text-align: center;
+}
+
+.testando-img{
+    
+    transition: 1s;
+}
+.testando-img:hover{
+    scale: 1.2;
+}
+.testando-img:hover ~ .titulo{
+    display: block;
+    opacity: 0;
+}
+.testando-bunner{
+    flex-direction: column;
+}
